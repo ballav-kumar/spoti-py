@@ -1,0 +1,34 @@
+----------------------------------------------------------
+	Spotify.py
+----------------------------------------------------------
+
+
+In this project majourly using the SPOTIFY API for accesing it via PYTHON 
+this is the majour step since for my major project DONNA which is a Virtual desktop assistant 
+So this is gooing to play the songs which we wnat to play in Spotify using Python
+
+----------------------------------------------------------
+NOTE:
+----------------------------------------------------------
+USERNAME, CLIENTID, CLIENTSECRET should be given by the user by making his/her account in https://developer.spotify.com/
+
+----------------------------------------------------------
+MODULES USED:
+----------------------------------------------------------
+1. json: to accespt the response from browser
+2. spotipy: this module will allow us to make the song play via tha API key(to be installed)
+3. webbrowser: it is imported since after authentication it will be redirected to the specified URL (via the browser).
+
+oauth_object is used to access the function SpotifyOAuth from installed spotify library, we pass clientid, clientsecret and uri(uniforn resource identifier). this function verifies clientid, clientsecret and uri are valid or not.
+
+token_dict which gets the token as the proof of aur authenticity
+
+spotipy.Spotify(auth=token) this is the step where the token generated in the previous step gets authorized.
+
+user = spotifyObject.current_user(), this particular line gets all the details of the user and combines them.
+
+This user information is used to retrieve the JSON response sent by the browser to our system. The print statement here is used to print this JSON response.
+
+
+
+
